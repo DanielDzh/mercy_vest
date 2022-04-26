@@ -92,7 +92,7 @@ const Menu = ({ active, setActive }) => {
 
             <Link
                className={styles["header_link"]}
-               to="becomePartner"
+               to="Reviews"
                smooth={true}
                duration={2000}
                activeClass="active"
