@@ -44,7 +44,7 @@ export default function ClassVest() {
               vests.map((item, index) =>
               (
                 item.rating === active ?
-                  <>
+                  <div key={index}>
                     <div className={styles["images_vest_rating"]}>
                       {[...new Array(item.rating)].map((x, rowIndex) => (
                         <div className={styles["images_vest_rating_img"]}>
@@ -56,7 +56,7 @@ export default function ClassVest() {
                     <div className={styles["image_vest"]}>
                       <img src={item.vets_img} alt="" />
                     </div>
-                  </>
+                  </div>
                   :
                   <></>
               )
