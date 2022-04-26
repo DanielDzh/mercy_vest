@@ -47,7 +47,7 @@ export default function ClassVest() {
                   <div key={index}>
                     <div className={styles["images_vest_rating"]}>
                       {[...new Array(item.rating)].map((x, rowIndex) => (
-                        <div className={styles["images_vest_rating_img"]}>
+                        <div className={styles["images_vest_rating_img"]} key={rowIndex}>
                           <img src="images/vestsClass/Vector.png" alt="" key={rowIndex} />
                         </div>
                       ))}
