@@ -10,7 +10,7 @@ const Example = ({ children, styles }) => {
             data={{
                text: trans("poem"),
                url: "https://www.mercychain.org",
-               title: "Mercy Chain",
+               title: "Mercy Vest",
             }}
             onClick={() => console.log("shared successfully!")}
          >

@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div>
       <Helmet
-        customTitle="Mercy Chain"
+        customTitle="Mercy Vest"
         description="share_text"
         image="images/Logo.png"
       />
