@@ -5,7 +5,7 @@ import ButtonBlue from "../ButtonBlue";
 import Header from "../Header/index";
 import styles from "./Slider.module.scss";
 
-export default function HeroSlider({ totalAmount, expectedAmount }) {
+export default function HeroSlider() {
   const { trans } = useTrans();
 
 
@@ -14,15 +14,19 @@ export default function HeroSlider({ totalAmount, expectedAmount }) {
       <div className={styles["container-slider"]}>
         <Header />
         <div className={styles["hero"]}>
-          <div className={styles["hero_container"]} style={{ background: 'url("images/hero_back.png") 100% 100%/contain no-repeat' }}>
+          <div className={styles["hero_container"]}>
             <div className={styles["hero_abs"]}>
               <div className={styles["hero_abs_text"]}>
                 <p>{trans("slider_already_sent_1")}</p>
                 <h2>{trans("slider_already_sent_2")}</h2>
               </div>
               <div className={styles["hero_abs_line"]}>
-                <img src="images/LineOnVest.png" alt="" />
+                <img src="images/LineOnVest.png" alt="" className={styles["hero_abs_line_1"]} />
+                <img src="images/hero_line_mobile.png" alt="" className={styles["hero_abs_line_2"]} />
               </div>
+            </div>
+            <div className={styles["hero_img_mobile"]}>
+              <img src="images/backHeroMobile.png" alt="" />
             </div>
             <div className={styles["hero_text"]}>
               <div className={styles["hero_title"]}>

@@ -13,13 +13,14 @@
          flex-direction: column;
       }
 
-      @media screen and (max-width: 600px) {
-         padding: 55px 40px;
+      @media screen and (max-width: 650px) {
+         padding: 4vw 13vw;
       }
 
-      @media screen and (max-width: 450px) {
-         padding: 45px 20px;
+      @media screen and (max-width: 475px) {
+         padding: 4vw 4vw;
       }
+
 
 
       .levels_of_dody_title {
@@ -29,6 +30,22 @@
          text-align: center;
          color: #fff;
          margin-bottom: 40px;
+
+
+         @media screen and (max-width: 650px) {
+            font-size: 4vw;
+            margin-bottom: 25px;
+         }
+
+         @media screen and (max-width: 475px) {
+            font-size: 6vw;
+            margin-bottom: 25px;
+         }
+
+         @media screen and (max-width: 375px) {
+            font-size: 8vw;
+            margin-bottom: 10px;
+         }
 
          span {
             padding: .3vw 1vw;
@@ -41,36 +58,79 @@
          display: flex;
          align-items: center;
 
+         @media screen and (max-width: 475px) {
+            flex-direction: column;
+         }
+
          .images_vest {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 70%;
 
-
-            .images_vest_rating {
-               display: flex;
-               margin-bottom: 10px;
-               justify-content: center;
-
-
-               .images_vest_rating_img {
-                  width: 4vw;
-                  height: 4vw;
-
-                  img {
-                     width: 150%;
-                     height: 150%;
-                  }
-               }
-
+            @media screen and (max-width: 475px) {
+               width: 100%;
             }
 
-            .image_vest {
-               width: 24vw;
-
-               img {
+            .images_vest_wrapp {
+               @media screen and (max-width: 475px) {
                   width: 100%;
+               }
+
+               .images_vest_rating {
+                  display: flex;
+                  margin-bottom: 10px;
+                  justify-content: center;
+
+
+                  .images_vest_rating_img {
+                     width: 4vw;
+                     height: 4vw;
+
+                     @media screen and(max-width: 475px) {
+                        width: 9vw;
+                        height: 9vw;
+                        display: flex;
+                        justify-content: center;
+                     }
+
+                     @media screen and (max-width: 375px) {
+                        width: 12vw;
+                     }
+
+
+                     img {
+                        width: 150%;
+                        height: 150%;
+
+                        @media screen and (max-width: 375px) {
+                           width: 200%;
+                           height: 200%;
+                        }
+                     }
+                  }
+
+               }
+
+               .image_vest {
+                  width: 24vw;
+
+                  @media screen and (max-width: 650px) {
+                     width: 26vw;
+                  }
+
+                  @media screen and (max-width: 475px) {
+                     width: 60%;
+                     margin: auto;
+                  }
+
+                  @media screen and (max-width: 375px) {
+                     width: 70%;
+                  }
+
+                  img {
+                     width: 100%;
+                  }
                }
             }
          }
@@ -81,6 +141,14 @@
             flex-direction: column;
             margin-left: 15px;
 
+            @media screen and (max-width: 650px) {
+               margin-left: 10px;
+            }
+
+            @media screen and (max-width: 475px) {
+               margin-top: 15px;
+            }
+
             .vest_choices {
                display: flex;
 
@@ -90,6 +158,17 @@
                   margin-right: 10px;
                   cursor: pointer;
                   transition: all .3s ease;
+
+                  @media screen and (max-width: 800px) {
+                     border: 1px #57616B solid;
+                  }
+
+                  @media screen and (max-width: 475px) {
+                     width: 100%;
+                     border: 1.5px #57616B solid;
+                     border-radius: 9px;
+
+                  }
 
                   &:hover {
                      transform: scale(1.1);
@@ -105,6 +184,19 @@
                      margin: 0;
                      padding: 8px 24px;
 
+                     @media screen and (max-width: 800px) {
+                        font-size: 1.5vw;
+                        padding: 5px 20px;
+                     }
+
+                     @media screen and (max-width: 475px) {
+                        font-size: 2.9vw;
+                     }
+
+                     @media screen and (max-width: 375px) {
+                        font-size: 4vw;
+                     }
+
                   }
                }
             }
@@ -112,12 +204,32 @@
             .vest_desc {
                margin-top: 30px;
 
+               @media screen and (max-width: 800px) {
+                  margin-top: 20px;
+               }
+
+               @media screen and (max-width: 650px) {
+                  margin-top: 15px;
+               }
+
                p {
                   font-family: 'Montserrat400';
                   font-size: 1.2vw;
                   line-height: 160%;
                   color: #FFFFFF;
                   opacity: 0.7;
+
+                  @media screen and (max-width: 650px) {
+                     font-size: 1.4vw;
+                  }
+
+                  @media screen and (max-width: 475px) {
+                     font-size: 2.6vw;
+                  }
+
+                  @media screen and (max-width: 375px) {
+                     font-size: 3.5vw;
+                  }
                }
             }
          }

@@ -22,8 +22,33 @@
 
    }
 
-   @media screen and (max-width: 375px) {
-      padding: 10vw 4vw;
+   @media screen and (max-width: 475px) {
+      flex-direction: column;
+   }
+
+   .h1_mobile {
+      display: none;
+      margin-bottom: 30px;
+
+      @media screen and (max-width: 475px) {
+         display: block;
+      }
+
+      font-family: 'Montserrat700';
+      font-size: 6.8vw;
+      line-height: 130.2%;
+      color: #fff;
+
+      @media screen and (max-width: 475px) {
+         font-size: 7.8vw;
+
+      }
+
+      span:first-of-type {
+         color: #0F1D2B;
+         background-color: #2D9CDB;
+         padding: 3px 5px;
+      }
    }
 
    .everyday_images_block {
@@ -38,12 +63,22 @@
    .everyday_desc {
       width: 100%;
       padding-left: 2vw;
+      display: flex;
+      flex-direction: column;
 
       h1 {
          font-family: 'Montserrat700';
          font-size: 3vw;
          line-height: 130.2%;
          color: #fff;
+
+         @media screen and(max-width: 650px) {
+            font-size: 3.5vw;
+         }
+
+         @media screen and(max-width: 475px) {
+            display: none;
+         }
 
          span:first-of-type {
             color: #0F1D2B;
@@ -59,17 +94,42 @@
          color: #FFFFFF;
          opacity: 0.7;
 
+         @media screen and(max-width: 650px) {
+            font-size: 1.3vw;
+         }
+
+         @media screen and(max-width: 475px) {
+            font-size: 3vw;
+         }
+
+         @media screen and (max-width: 375px) {
+            font-size: 4vw;
+         }
+
          &:first-of-type {
             margin: 20px 0;
+
+            @media screen and(max-width: 800px) {
+               margin: 15px 0;
+            }
+
+            @media screen and(max-width: 650px) {
+               margin: 10px 0;
+            }
          }
 
          &:last-of-type {
             margin-bottom: 30px;
+
+            @media screen and(max-width: 650px) {
+               margin-bottom: 20px;
+            }
          }
       }
 
       .link {
          text-decoration: none;
+         align-self: center;
       }
    }
 

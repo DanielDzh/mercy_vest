@@ -2,12 +2,13 @@
    margin-top: 100px;
    margin-bottom: 7vw;
 
-   @media screen and(max-width: 768px) {
+   @media screen and(max-width: 800px) {
+      margin-top: 60px;
       margin-bottom: 12vw;
    }
 
-   @media screen and(max-width: 425px) {
-      margin-bottom: 15vw;
+   @media screen and(max-width: 475px) {
+      margin-bottom: 20vw;
    }
 
    .custom_paging {
@@ -28,6 +29,14 @@
          width: 2vw;
          height: 2vw;
       }
+
+      @media screen and(max-width: 475px) {
+         width: 3.3vw;
+         height: 3.3vw;
+         margin: 0 10px;
+         margin-top: 20px;
+
+      }
    }
 
    .reviews_title {
@@ -38,68 +47,123 @@
       margin: 0 auto;
       margin-bottom: 50px;
 
+      @media screen and(max-width: 650px) {
+         margin-bottom: 30px;
+      }
+
+      @media screen and(max-width: 475px) {
+         margin: 0;
+         margin-bottom: 25px;
+         width: 100%;
+      }
+
       .reviews_title_h1 {
          font-family: 'Montserrat800';
          font-style: normal;
-         font-size: 60px;
+         font-size: 5vw;
          line-height: 73px;
          text-align: center;
          text-transform: uppercase;
          color: #0F1D2B;
-         padding: 2px 8px;
+         padding: 0 .7vw;
          background-color: #2D9CDB;
          margin-bottom: 2vw;
 
          @media screen and(max-width: 1200px) {
-            font-size: 55px;
+            // font-size: 55px;
          }
 
          @media screen and(max-width: 1024px) {
-            font-size: 50px;
-         }
-
-         @media screen and(max-width: 900px) {
-            font-size: 44px;
-            margin-bottom: 3vw;
-         }
-
-         @media screen and(max-width: 768px) {
-            font-size: 40px;
             line-height: 53px;
+            font-size: 4vw;
+         }
+
+         @media screen and(max-width: 650px) {
+            line-height: 40px;
+            font-size: 4.5vw;
          }
 
          @media screen and(max-width: 600px) {
-            font-size: 36px;
+            font-size: 8.5vw;
          }
 
-         @media screen and(max-width: 450px) {
-            font-size: 30px;
-            line-height: 33px;
-            margin-bottom: 7vw;
+         @media screen and(max-width: 475px) {
+            font-size: 11vw;
+            margin: 0 auto;
          }
       }
 
       .reviews_title_p {
          font-family: 'Montserrat400';
-         font-size: 22px;
+         font-size: 2vw;
          line-height: 160%;
          text-align: center;
          color: #FFFFFF;
          margin-bottom: .5rem;
+
+         @media screen and(max-width: 900px) {
+            font-size: 1.7vw;
+         }
+
+         @media screen and(max-width: 650px) {
+            font-size: 2vw;
+         }
+
+         @media screen and(max-width: 600px) {
+            font-size: 4vw;
+         }
+
+         @media screen and(max-width: 475px) {
+            font-size: 5.5vw;
+            margin: 10px auto;
+         }
       }
 
       .reviews_title_block {
          border: 3px solid #FFBC15;
          border-radius: 15px;
-         padding: 15px 30px;
+         padding: 1vw 2vw;
+
+         @media screen and(max-width: 900px) {
+            border: 2px solid #FFBC15;
+            padding: .8vw 1.8vw;
+         }
+
+         @media screen and(max-width: 650px) {
+            padding-top: .4vw;
+         }
+
+         @media screen and(max-width: 475px) {
+            border-radius: 12px;
+            padding: 2vw 4vw;
+         }
+
+         @media screen and(max-width: 375px) {
+            border-radius: 12px;
+            padding: 1.5vw 3vw;
+            text-align: center;
+            width: 90%;
+         }
 
          span {
 
             font-family: 'Montserrat700';
-            font-size: 25px;
+            font-size: 2vw;
             line-height: 160%;
             text-align: center;
             color: #fff;
+
+            @media screen and(max-width: 900px) {
+               font-size: 1.7vw;
+            }
+
+            @media screen and(max-width: 475px) {
+               font-size: 3.7vw;
+            }
+
+            @media screen and(max-width: 375px) {
+               font-size: 4.2vw;
+            }
 
             &.reviews_title_block_span_yellow {
                color: #FFBC15;
@@ -147,9 +211,14 @@
                width: 80%;
             }
 
-            @media screen and(max-width: 375px) {
-               width: 80%;
+            @media screen and(max-width: 475px) {
+               width: 95%;
                padding: 0 2vw;
+            }
+
+            @media screen and(max-width: 375px) {
+               width: 100%;
+               padding: 0 4vw;
             }
          }
 
@@ -167,10 +236,23 @@
             align-items: flex-start;
             padding-left: 1.5vw;
 
+            @media screen and(max-width: 375px) {
+               margin-left: 2vw;
+            }
+
             .slide_desc_cont {
                display: flex;
                align-items: center;
                margin-top: 16px;
+
+               @media screen and(max-width: 800px) {
+                  margin-top: 10px;
+               }
+
+               @media screen and(max-width: 650px) {
+                  margin-top: 7px;
+               }
+
 
                p {
                   margin: 0;
@@ -178,11 +260,41 @@
                   font-size: 1.1vw;
                   line-height: 160%;
                   color: #FFFFFF;
+
+                  @media screen and(max-width: 650px) {
+                     font-size: 1.5vw;
+                  }
+
+                  @media screen and(max-width: 475px) {
+                     font-size: 3vw;
+                  }
+
+                  @media screen and(max-width: 375px) {
+                     font-size: 4.2vw;
+                  }
                }
 
                img {
                   margin-right: 20px;
                   height: 2vw;
+
+                  @media screen and(max-width: 800px) {
+                     margin-right: 10px;
+                  }
+
+                  @media screen and(max-width: 650px) {
+                     height: 3vw;
+                     margin-right: 5px;
+                  }
+
+                  @media screen and(max-width: 475px) {
+                     height: 5.5vw;
+                     margin-right: 7px;
+                  }
+
+                  @media screen and(max-width: 375px) {
+                     height: 7.5vw;
+                  }
                }
             }
 
@@ -220,6 +332,14 @@
       justify-content: center;
       margin-top: 40px;
       text-decoration: none;
+
+      @media screen and(max-width: 800px) {
+         margin-top: 30px;
+      }
+
+      @media screen and(max-width: 650px) {
+         margin-top: 20px;
+      }
    }
 
 }
