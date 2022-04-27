@@ -27,7 +27,7 @@ export default function Home() {
         description="share_text"
         image="images/Logo.png"
       />
-      <HeroSlider totalAmount={total} expectedAmount={expected} />
+      <HeroSlider />
       <VideoBlock />
       <AboutUs />
       <ClassVest />
