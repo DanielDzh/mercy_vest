@@ -15,9 +15,8 @@ import VideoBlock from "../components/VideoBlock";
 import Details from "../components/Details";
 import Everyday from "../components/Everyday";
 
-const isNumber = (num) => num !== null && !isNaN(num);
 
-export default function Home({ total, expected }) {
+export default function Home() {
 
   const { trans } = useTrans();
 
@@ -42,14 +41,4 @@ export default function Home({ total, expected }) {
       <Footer />
     </div>
   );
-}
-
-export async function getServerSideProps() {
-  const data = await Api.get("/total");
-  return {
-    props: {
-      total: isNumber(data.total) ? data.total : 3000,
-      expected: isNumber(data.expected) ? data.expected : 30000,
-    },
-  };
 }
