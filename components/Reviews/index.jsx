@@ -93,18 +93,17 @@ export default function Reviews() {
       speed: 300,
       arrows: true,
       dots: true,
-      cssEase: "linear",
       responsive: [
          {
-            breakpoint: 768,
+            breakpoint: 650,
             settings: {
-               // slidesToShow: 1,
+               slidesToShow: 3,
                infinite: true,
                arrows: false,
             }
          },
          {
-            breakpoint: 600,
+            breakpoint: 375,
             settings: {
                slidesToShow: 1,
                infinite: true,

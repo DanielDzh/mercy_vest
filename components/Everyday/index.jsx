@@ -11,6 +11,10 @@ export default function Everyday() {
    return (
       <div id="everyday">
          <div className={styles["everyday_container"]}>
+            <h1 className={styles["h1_mobile"]}>
+               <span>300</span>
+               <span>{trans("everyday_title")}</span>
+            </h1>
             <div className={styles["everyday_images_block"]}>
                <img src="images/everyday.png" alt="" />
             </div>

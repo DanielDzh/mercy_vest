@@ -31,7 +31,7 @@ export default function Details() {
             </div>
             <div className={styles["details_blocks"]}>
                <div className={styles["details_block"]}>
-                  <img src="images/paypal.png" alt="" />
+                  <img src="images/paypal.png" alt="" className={styles["details_block_img_pay"]} />
                   <div className={styles["details_paypal_block_text"]}>
                      <h2>
                         PayPal

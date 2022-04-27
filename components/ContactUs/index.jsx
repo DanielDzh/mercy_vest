@@ -51,7 +51,7 @@ const ContactUs = () => {
   return (
     <div id="contactUs">
       <div className={styles["contactUs_container"]}>
-        <div className={styles["ourContacts"]}>
+        <div className={styles["ourContacts_desc"]}>
           <h1 className={styles["ourContacts_h1"]}>
             Контакти
           </h1>
@@ -81,7 +81,36 @@ const ContactUs = () => {
         <div className={styles["contactUs_block"]}>
           {/* <h1 className={styles["contactUs_title"]}>{trans("contacts")}</h1> */}
           <div className={styles["contactUs_block_img"]}>
-            <img src="images/contactUs.png" alt="" />
+            <img src="images/contactUs.png" alt="" className={styles["img_desc"]} />
+            <img src="images/contactUs_mobile.png" alt="" className={styles["img_desc_mobile"]} />
+
+            <div className={styles["ourContacts_lap"]}>
+              <h1 className={styles["ourContacts_h1"]}>
+                Контакти
+              </h1>
+              {contacts.map((item) => (
+                <div key={item.name} className={styles["contacts_wrapper"]}>
+                  <a href={item.url && item.url}>
+                    <img loading="lazy" src={item.icon} alt="" />
+                    <h3>
+                      <h3>{item.desc}</h3>
+                    </h3>
+                  </a>
+                </div>
+              ))}
+              <span className={styles["ourContacts_span"]}></span>
+              <h2 className={styles["ourContacts_h2"]}>
+                Слідкуй за нашою роботою
+              </h2>
+              <div className={styles["ourContacts_social"]}>
+                <a href="">
+                  <img src="images/iconInstYellow.png" alt="" />
+                </a>
+                <a href="">
+                  <img src="images/iconFacebookYellow.png" alt="" />
+                </a>
+              </div>
+            </div>
           </div>
           <div className={styles["contactUs_content"]}>
 

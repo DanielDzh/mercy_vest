@@ -14,12 +14,40 @@
     padding: 10vw 9vw;
   }
 
-  @media screen and (max-width: 500px) {
-    padding: 10vw 4vw;
+  @media screen and (max-width: 475px) {
+    padding: 40px 0;
+    display: block;
   }
 
   @media screen and (max-width: 375px) {
-    padding: 10vw 4vw;
+    padding: 40px 0;
+    display: block;
+  }
+
+  .custom_paging {
+    display: flex;
+    width: 1vw;
+    height: 1vw;
+    margin: 0 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform .4s ease;
+
+    &:hover {
+      transition: transform .4s ease;
+      transform: scale(1.2);
+    }
+
+    @media screen and(max-width: 600px) {
+      width: 3vw;
+      height: 3vw;
+    }
+
+    @media screen and(max-width: 400px) {
+      width: 3.5vw;
+      margin: 0 10px;
+      height: 3.5vw;
+    }
   }
 
   .aboutUs_title {
@@ -29,11 +57,43 @@
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+    display: flex;
 
-    span {
+    @media screen and (max-width: 800px) {
+      margin-bottom: .5rem;
+    }
+
+    @media screen and (max-width: 650px) {
+      margin-bottom: 20px;
+      font-size: 4vw;
+    }
+
+    @media screen and (max-width: 475px) {
+      margin-bottom: 20px;
+      font-size: 7vw;
+      width: 100%;
+      text-align: start;
+      padding: 4vw;
+    }
+
+    @media screen and (max-width: 375px) {
+      margin-bottom: 20px;
+      font-size: 8vw;
+      width: 100%;
+      text-align: start;
+      padding: 4vw;
+    }
+
+
+    span:last-of-type {
       padding: 3px 13px;
       color: #0F1D2B;
       background-color: #FFBC15;
+
+      @media screen and (max-width: 375px) {
+        padding: 0px 10px;
+      }
     }
   }
 
@@ -43,9 +103,18 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    @media screen and (max-width: 475px) {
+      display: none;
+    }
+
     .aboutUs_block {
       margin-top: 50px;
       width: 30%;
+
+      @media screen and (max-width: 650px) {
+        margin-top: 20px;
+        width: 47%;
+      }
 
       .aboutUs_block_img {
         width: 100%;
@@ -71,6 +140,10 @@
         line-height: 130.2%;
         margin: 1vw 0;
         color: #FFFFFF;
+
+        @media screen and (max-width: 650px) {
+          font-size: 2.3vw;
+        }
       }
 
       .aboutUs_block_p {
@@ -79,6 +152,136 @@
         line-height: 160%;
         color: #FFFFFF;
         opacity: 0.7;
+
+        @media screen and (max-width: 650px) {
+          font-size: 1.3vw;
+        }
+      }
+    }
+  }
+
+  .reviews_slider {
+    position: relative;
+    display: none;
+
+    @media screen and(max-width: 475px) {
+      display: block;
+    }
+
+    div {
+
+      div {
+        display: flex;
+        align-items: flex-start;
+      }
+    }
+
+    ul {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 0;
+
+      li {
+        list-style: none;
+      }
+
+      li {
+        div {
+          background-color: black;
+        }
+      }
+    }
+
+    .slider_wrapp {
+
+      .slider_wrapp_img {
+        height: 100%;
+        width: 100%;
+        padding: 0 1.2vw;
+
+        @media screen and(max-width: 600px) {
+          width: 95%;
+        }
+
+        @media screen and(max-width: 375px) {
+          width: 100%;
+          padding: 0 4vw;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .reviews_slide {
+        transition: all .3s ease;
+        width: 100%;
+      }
+
+      .slide_desc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1.5vw;
+        margin-top: 10px;
+        width: 90%;
+
+        @media screen and(max-width: 375px) {
+          padding: 0 4vw;
+        }
+
+        .slide_desc_cont {
+          font-family: 'Montserrat700';
+          font-size: 4vw;
+          line-height: 130.2%;
+          color: #FFFFFF;
+
+          @media screen and(max-width: 375px) {
+            font-size: 7vw;
+            line-height: 105.2%;
+
+          }
+
+        }
+
+        p {
+          font-family: 'Montserrat700';
+          font-size: 2.5vw;
+          line-height: 160%;
+          color: #FFFFFF;
+          opacity: 0.7;
+
+          @media screen and(max-width: 375px) {
+            font-size: 3.8vw;
+            line-height: 150.2%;
+
+          }
+        }
+
+
+      }
+
+      .slide_after_slide {
+        opacity: .4;
+        width: 95%;
+
+        @media screen and(max-width: 600px) {
+          width: 60%;
+          margin: 0;
+          margin-left: auto;
+        }
+      }
+
+      .slide_before_slide {
+        opacity: .4;
+        width: 95%;
+
+        @media screen and(max-width: 600px) {
+          width: 60%;
+          margin: 0;
+          margin-right: auto;
+        }
       }
     }
   }
