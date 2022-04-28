@@ -150,7 +150,7 @@ const Menu = ({ active, setActive }) => {
             >
                {trans('header_contactUs')}
             </Link>
-            <div className={styles["lang"]}>
+            {/* <div className={styles["lang"]}>
                <a href="https://www.instagram.com/mercy_chain">
                   <img loading="lazy" src="images/iconInstYellow.png" alt="" className={styles["lang_img"]} />
                </a>
@@ -160,7 +160,7 @@ const Menu = ({ active, setActive }) => {
                <a href="">
                   <img loading="lazy" src="images/iconTelegramYellow.png" alt="" className={styles["lang_img"]} />
                </a>
-            </div>
+            </div> */}
 
 
          </div>
