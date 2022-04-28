@@ -98,9 +98,11 @@
 
 
     span:last-of-type {
-      padding: 3px 13px;
+      padding: 1px 8px;
+      padding-top: 0;
       color: #0F1D2B;
       background-color: #FFBC15;
+      margin-left: 7px;
 
       @media screen and (max-width: 375px) {
         padding: 0px 10px;

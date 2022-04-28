@@ -79,7 +79,7 @@ const Menu = ({ active, setActive }) => {
             </Link>
             <Link
                className={styles["header_link"]}
-               to="currentProjects"
+               to="minutiae"
                smooth={true}
                duration={2000}
                activeClass="active"
@@ -92,7 +92,7 @@ const Menu = ({ active, setActive }) => {
 
             <Link
                className={styles["header_link"]}
-               to="Reviews"
+               to="levels"
                smooth={true}
                duration={2000}
                activeClass="active"
@@ -104,7 +104,7 @@ const Menu = ({ active, setActive }) => {
             </Link>
             <Link
                className={styles["header_link"]}
-               to="Reviews"
+               to="cost"
                smooth={true}
                duration={2000}
                activeClass="active"
@@ -116,7 +116,7 @@ const Menu = ({ active, setActive }) => {
             </Link>
             <Link
                className={styles["header_link"]}
-               to="ourTeam"
+               to="reviews"
                smooth={true}
                duration={2000}
                activeClass="active"
@@ -128,7 +128,7 @@ const Menu = ({ active, setActive }) => {
             </Link>
             <Link
                className={styles["header_link"]}
-               to="ourPartners"
+               to="details"
                smooth={true}
                duration={2000}
                activeClass="active"

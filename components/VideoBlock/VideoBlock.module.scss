@@ -196,13 +196,31 @@
             @media screen and (max-width: 650px) {
                width: 6.5vw;
                top: 37%;
-               left: 65%;
+               left: 67%;
             }
 
-            @media screen and (max-width: 425px) {
-               width: 12vw;
+            @media screen and (max-width: 475px) {
+               width: 10vw;
+               top: 38%;
+               left: 48%;
+            }
+
+            @media screen and (max-width: 420px) {
+               width: 10vw;
+               top: 38%;
+               left: 46%;
+            }
+
+            @media screen and (max-width: 380px) {
+               width: 10vw;
                top: 38%;
                left: 44%;
+            }
+
+            @media screen and (max-width: 350px) {
+               width: 10vw;
+               top: 38%;
+               left: 42%;
             }
          }
       }

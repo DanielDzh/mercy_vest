@@ -65,7 +65,7 @@ const ContactUs = () => {
               </a>
             </div>
           ))}
-          <span className={styles["ourContacts_span"]}></span>
+          {/* <span className={styles["ourContacts_span"]}></span>
           <h2 className={styles["ourContacts_h2"]}>
             Слідкуй за нашою роботою
           </h2>
@@ -76,7 +76,7 @@ const ContactUs = () => {
             <a href="">
               <img src="images/icons/iconFacebookYellow.png" alt="" loading="lazy" />
             </a>
-          </div>
+          </div> */}
         </div>
         <div className={styles["contactUs_block"]}>
           {/* <h1 className={styles["contactUs_title"]}>{trans("contacts")}</h1> */}
@@ -98,8 +98,8 @@ const ContactUs = () => {
                   </a>
                 </div>
               ))}
-              <span className={styles["ourContacts_span"]}></span>
-              <h2 className={styles["ourContacts_h2"]}>
+              {/* <span className={styles["ourContacts_span"]}></span> */}
+              {/* <h2 className={styles["ourContacts_h2"]}>
                 Слідкуй за нашою роботою
               </h2>
               <div className={styles["ourContacts_social"]}>
@@ -109,7 +109,7 @@ const ContactUs = () => {
                 <a href="">
                   <img src="images/icons/iconFacebookYellow.png" alt="" loading="lazy" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className={styles["contactUs_content"]}>
