@@ -14,6 +14,11 @@
     padding: 10vw 9vw;
   }
 
+  @media screen and (max-width:550px) {
+    padding: 10vw 4vw;
+    display: block;
+  }
+
   @media screen and (max-width: 475px) {
     padding: 40px 0;
     display: block;
@@ -66,7 +71,12 @@
 
     @media screen and (max-width: 650px) {
       margin-bottom: 20px;
-      font-size: 4vw;
+      font-size: 5vw;
+    }
+
+    @media screen and (max-width: 550px) {
+      margin-bottom: 10px;
+      font-size: 5.7vw;
     }
 
     @media screen and (max-width: 475px) {
@@ -84,6 +94,7 @@
       text-align: start;
       padding: 4vw;
     }
+
 
 
     span:last-of-type {
@@ -142,7 +153,11 @@
         color: #FFFFFF;
 
         @media screen and (max-width: 650px) {
-          font-size: 2.3vw;
+          font-size: 3.3vw;
+        }
+
+        @media screen and (max-width: 550px) {
+          font-size: 3.5vw;
         }
       }
 
@@ -154,7 +169,12 @@
         opacity: 0.7;
 
         @media screen and (max-width: 650px) {
-          font-size: 1.3vw;
+          font-size: 2vw;
+          line-height: 150%;
+        }
+
+        @media screen and (max-width: 550px) {
+          font-size: 2.3vw;
         }
       }
     }
@@ -240,7 +260,6 @@
           @media screen and(max-width: 375px) {
             font-size: 7vw;
             line-height: 105.2%;
-
           }
 
         }

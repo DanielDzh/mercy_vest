@@ -16,7 +16,7 @@ export default function Everyday() {
                <span>{trans("everyday_title")}</span>
             </h1>
             <div className={styles["everyday_images_block"]}>
-               <img src="images/everyday.png" alt="" />
+               <img src="images/everyday.png" alt="" loading="lazy" />
             </div>
             <div className={styles["everyday_desc"]}>
                <h1>

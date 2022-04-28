@@ -20,8 +20,8 @@ export default function VideoBlock() {
          <div className={styles["video_block_container"]}>
             <div className={styles["video_block_wrapper"]}>
                <div className={styles["video_image_wrapper"]}>
-                  <img className={styles["image_video"]} src="images/backVideo.png" alt="" />
-                  <img className={styles["button_play"]} src="images/buttonPlay.png" alt="" onClick={() => setVisibleVideo(true)} />
+                  <img className={styles["image_video"]} src="images/backVideo.png" alt="" loading="lazy" />
+                  <img className={styles["button_play"]} src="images/buttonPlay.png" alt="" onClick={() => setVisibleVideo(true)} loading="lazy" />
                </div>
                <div className={styles["video_text"]}>
                   <h1 className={styles["text_h1_white"]}>

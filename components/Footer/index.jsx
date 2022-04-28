@@ -11,16 +11,16 @@ const Footer = () => {
          <div className={styles["footer_container"]}>
             <div className={styles["footer_upper"]}>
                <div className={styles["footer_logo"]}>
-                  <img loading="lazy" src="images/allLogo.png" alt="" />
+                  <img loading="lazy" src="images/logo/allLogo.png" alt="" />
                   <div className={styles["footer_social_mobile"]}>
                      <a href="https://www.instagram.com/mercy_chain">
-                        <img loading="lazy" src="images/iconInstYellow.png" alt="" />
+                        <img loading="lazy" src="images/icons/iconInstYellow.png" alt="" />
                      </a>
                      <a href="https://www.facebook.com/Mercy-Chain-108789655101913/">
-                        <img loading="lazy" src="images/iconFacebookYellow.png" alt="" />
+                        <img loading="lazy" src="images/icons/iconFacebookYellow.png" alt="" />
                      </a>
                      <a href="">
-                        <img loading="lazy" src="images/iconTelegramYellow.png" alt="" />
+                        <img loading="lazy" src="images/icons/iconTelegramYellow.png" alt="" />
                      </a>
                   </div>
                   <span>Privacy Police</span>
@@ -30,13 +30,13 @@ const Footer = () => {
             <div className={styles["footer_under"]}>
                <h1>{trans("footer_join")}</h1>
                <a href="https://www.instagram.com/mercy_chain">
-                  <img loading="lazy" src="images/iconInstYellow.png" alt="" />
+                  <img loading="lazy" src="images/icons/iconInstYellow.png" alt="" />
                </a>
                <a href="https://www.facebook.com/Mercy-Chain-108789655101913/">
-                  <img loading="lazy" src="images/iconFacebookYellow.png" alt="" />
+                  <img loading="lazy" src="images/icons/iconFacebookYellow.png" alt="" />
                </a>
                <a href="">
-                  <img loading="lazy" src="images/iconTelegramYellow.png" alt="" />
+                  <img loading="lazy" src="images/icons/iconTelegramYellow.png" alt="" />
                </a>
             </div>
          </div>

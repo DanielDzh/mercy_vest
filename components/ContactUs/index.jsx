@@ -8,19 +8,19 @@ import ContactForm from "./Form";
 
 const contacts = [
   {
-    icon: "images/iconLocation.png",
+    icon: "images/icons/iconLocation.png",
     name: "location",
     url: "",
     desc: "Kresánkova 3581/7B, 84105 Bratislava Slovakia",
   },
   {
-    icon: "images/iconPhone.png",
+    icon: "images/icons/iconPhone.png",
     name: "phone",
     url: "",
     desc: "+421948143899",
   },
   {
-    icon: "images/iconMail.png",
+    icon: "images/icons/iconMail.png",
     name: "mail",
     url: "mailto:support@mercychain.org",
     desc: "support@mercychain.org",
@@ -71,18 +71,18 @@ const ContactUs = () => {
           </h2>
           <div className={styles["ourContacts_social"]}>
             <a href="">
-              <img src="images/iconInstYellow.png" alt="" />
+              <img src="images/icons/iconInstYellow.png" alt="" loading="lazy" />
             </a>
             <a href="">
-              <img src="images/iconFacebookYellow.png" alt="" />
+              <img src="images/icons/iconFacebookYellow.png" alt="" loading="lazy" />
             </a>
           </div>
         </div>
         <div className={styles["contactUs_block"]}>
           {/* <h1 className={styles["contactUs_title"]}>{trans("contacts")}</h1> */}
           <div className={styles["contactUs_block_img"]}>
-            <img src="images/contactUs.png" alt="" className={styles["img_desc"]} />
-            <img src="images/contactUs_mobile.png" alt="" className={styles["img_desc_mobile"]} />
+            <img src="images/contactUs.png" alt="" className={styles["img_desc"]} loading="lazy" />
+            <img src="images/contactUs_mobile.png" alt="" className={styles["img_desc_mobile"]} loading="lazy" />
 
             <div className={styles["ourContacts_lap"]}>
               <h1 className={styles["ourContacts_h1"]}>
@@ -104,10 +104,10 @@ const ContactUs = () => {
               </h2>
               <div className={styles["ourContacts_social"]}>
                 <a href="">
-                  <img src="images/iconInstYellow.png" alt="" />
+                  <img src="images/icons/iconInstYellow.png" alt="" loading="lazy" />
                 </a>
                 <a href="">
-                  <img src="images/iconFacebookYellow.png" alt="" />
+                  <img src="images/icons/iconFacebookYellow.png" alt="" loading="lazy" />
                 </a>
               </div>
             </div>

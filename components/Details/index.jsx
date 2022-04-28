@@ -31,26 +31,26 @@ export default function Details() {
             </div>
             <div className={styles["details_blocks"]}>
                <div className={styles["details_block"]}>
-                  <img src="images/paypal.png" alt="" className={styles["details_block_img_pay"]} />
+                  <img src="images/paypal.png" alt="" className={styles["details_block_img_pay"]} loading="lazy" />
                   <div className={styles["details_paypal_block_text"]}>
                      <h2>
                         PayPal
                      </h2>
                      <p onClick={clipboardPayPal.copy}>
                         <input ref={clipboardPayPal.target} value={PayPal} type="hidden" />
-                        {clipboardPayPal.copied ? 'Copied' : 'Alexey.zigmar@gmail.com'} <img src="images/icons/copy.png" />
+                        {clipboardPayPal.copied ? 'Copied' : 'Alexey.zigmar@gmail.com'} <img src="images/icons/copy.png" loading="lazy" />
                      </p>
                   </div>
                </div>
                <div className={styles["details_block"]}>
-                  <img className={styles["details_block_img"]} src="images/privat.png" alt="" />
+                  <img className={styles["details_block_img"]} src="images/privat.png" alt="" loading="lazy" />
                   <div className={styles["details_paypal_block_text"]}>
                      <h2>
                         ПриватБанк (OLEKSII DERKACH)
                      </h2>
                      <p onClick={clipboardPrivat.copy}>
                         <input ref={clipboardPrivat.target} value={Privat} type="hidden" />
-                        {clipboardPrivat.copied ? 'Copied' : '5363 5423 0844 9322'} <img src="images/icons/copy.png" />
+                        {clipboardPrivat.copied ? 'Copied' : '5363 5423 0844 9322'} <img src="images/icons/copy.png" loading="lazy" />
                      </p>
                   </div>
                </div>

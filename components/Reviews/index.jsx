@@ -68,7 +68,7 @@ export default function Reviews() {
             style={{ ...style, cursor: 'pointer', display: "flex", justifyContent: 'center', alignItems: 'center', position: 'absolute', left: '37%', bottom: '0%', height: '3vw', padding: '.8vw', borderRadius: '50px', backgroundColor: 'unset', zIndex: 2 }}
             onClick={onClick}
          >
-            <img loading="lazy" style={{ width: '100%', height: '100%' }} src="images/icons/back.png" alt="" />
+            <img loading="lazy" style={{ height: '100%' }} src="images/icons/back.png" alt="" />
          </div>
       );
    };
@@ -80,7 +80,7 @@ export default function Reviews() {
             style={{ ...style, cursor: 'pointer', display: "flex", justifyContent: 'center', alignItems: 'center', position: 'absolute', right: '37%', bottom: '0%', height: '3vw', padding: '.8vw', borderRadius: '50px', backgroundColor: 'unset' }}
             onClick={onClick}
          >
-            <img loading="lazy" style={{ width: '100%', height: '100%' }} src="images/icons/next.png" alt="" />
+            <img loading="lazy" style={{ height: '100%' }} src="images/icons/next.png" alt="" />
          </div>
       );
    };
@@ -98,6 +98,14 @@ export default function Reviews() {
             breakpoint: 650,
             settings: {
                slidesToShow: 3,
+               infinite: true,
+               arrows: false,
+            }
+         },
+         {
+            breakpoint: 550,
+            settings: {
+               slidesToShow: 2,
                infinite: true,
                arrows: false,
             }
@@ -175,15 +183,15 @@ export default function Reviews() {
                         </div>
                         <div className={styles["slide_desc"]}>
                            <div className={styles["slide_desc_cont"]}>
-                              <img src="images/icons/date.png" alt="" />
+                              <img src="images/icons/date.png" alt="" loading="lazy" />
                               <p>{item.date}</p>
                            </div>
                            <div className={styles["slide_desc_cont"]}>
-                              <img src="images/icons/amount.png" alt="" />
+                              <img src="images/icons/amount.png" alt="" loading="lazy" />
                               <p>{item.amount}</p>
                            </div>
                            <div className={styles["slide_desc_cont"]}>
-                              <img src="images/icons/city.png" alt="" />
+                              <img src="images/icons/city.png" alt="" loading="lazy" />
                               <p>{item.city}</p>
                            </div>
                         </div>

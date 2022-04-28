@@ -21,12 +21,12 @@ export default function HeroSlider() {
                 <h2>{trans("slider_already_sent_2")}</h2>
               </div>
               <div className={styles["hero_abs_line"]}>
-                <img src="images/LineOnVest.png" alt="" className={styles["hero_abs_line_1"]} />
-                <img src="images/hero_line_mobile.png" alt="" className={styles["hero_abs_line_2"]} />
+                <img src="images/icons/LineOnVest.png" alt="" className={styles["hero_abs_line_1"]} loading="lazy" />
+                <img src="images/icons/hero_line_mobile.png" alt="" className={styles["hero_abs_line_2"]} loading="lazy" />
               </div>
             </div>
             <div className={styles["hero_img_mobile"]}>
-              <img src="images/backHeroMobile.png" alt="" />
+              <img src="images/backHeroMobile.png" alt="" loading="lazy" />
             </div>
             <div className={styles["hero_text"]}>
               <div className={styles["hero_title"]}>

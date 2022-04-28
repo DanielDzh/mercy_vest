@@ -1,8 +1,7 @@
 import en from "./en.json";
-import ru from "./ru.json";
 import ua from "./ua.json";
 
-export const messages = { ru, ua, en };
+export const messages = { ua, en };
 
 export const DEFAULT_LOCALE = "ua";
 

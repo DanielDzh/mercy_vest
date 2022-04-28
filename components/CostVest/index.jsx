@@ -1,8 +1,5 @@
 import React from "react";
 import styles from "./CostVest.module.scss";
-import head from "../../public/images/head.png";
-import hands from "../../public/images/hands.png";
-import documents from "../../public/images/documents.png";
 import { useTrans } from "../../hooks/useTrans";
 
 export default function CostVest() {
@@ -20,7 +17,7 @@ export default function CostVest() {
                 <span>{trans("cost_title_2")}</span>
               </h1>
             </div>
-            <img src="images/costBackMobile.png" alt="" className={styles["costBack_mobile"]} />
+            <img src="images/costBackMobile.png" alt="" className={styles["costBack_mobile"]} loading="lazy" />
             <p className={styles["cost_desc_p"]}>{trans("cost_desc_p")}</p>
             <div className={styles["cost_desc_span"]}>
               <p>{trans("cost_desc_span_1")}</p>
@@ -31,7 +28,7 @@ export default function CostVest() {
             </div>
           </div>
           <div className={styles["warning"]}>
-            <img src="images/warning.png" alt="" />
+            <img src="images/icons/warning.png" alt="" loading="lazy" />
             <h2>{trans("warninng")}</h2>
           </div>
         </div>

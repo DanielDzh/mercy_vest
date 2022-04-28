@@ -33,8 +33,6 @@
   box-shadow: 0px 0px 30px rgba(16, 166, 249, 0.8);
   transition: all 400ms ease;
 
-  @media screen and (max-width: 1200px) {}
-
   @media screen and(max-width: 1024px) {
     padding: 0.5rem 1.6rem;
     // font-size: 15px;
@@ -51,6 +49,15 @@
     font-size: 1.5vw;
     line-height: 20px;
     width: fit-content;
+  }
+
+  @media screen and(max-width: 600px) {
+    font-size: 2vw;
+  }
+
+  @media screen and(max-width: 550px) {
+    padding: .6rem 2rem;
+    font-size: 2.5vw;
   }
 
   @media screen and(max-width: 475px) {

@@ -9,7 +9,7 @@ const Example = ({ children, styles }) => {
          <RWebShare
             data={{
                text: trans("poem"),
-               url: "https://www.mercychain.org",
+               url: "https://www.mercyvest.org",
                title: "Mercy Vest",
             }}
             onClick={() => console.log("shared successfully!")}
