@@ -12,7 +12,7 @@ const Footer = () => {
             <div className={styles["footer_upper"]}>
                <div className={styles["footer_logo"]}>
                   <img loading="lazy" src="images/logo/allLogo.png" alt="" />
-                  <div className={styles["footer_social_mobile"]}>
+                  {/* <div className={styles["footer_social_mobile"]}>
                      <a href="https://www.instagram.com/mercy_chain">
                         <img loading="lazy" src="images/icons/iconInstYellow.png" alt="" />
                      </a>
@@ -22,12 +22,12 @@ const Footer = () => {
                      <a href="">
                         <img loading="lazy" src="images/icons/iconTelegramYellow.png" alt="" />
                      </a>
-                  </div>
+                  </div> */}
                   <span>Privacy Police</span>
                   <span>© 2022 | Mercy Chain</span>
                </div>
             </div>
-            <div className={styles["footer_under"]}>
+            {/* <div className={styles["footer_under"]}>
                <h1>{trans("footer_join")}</h1>
                <a href="https://www.instagram.com/mercy_chain">
                   <img loading="lazy" src="images/icons/iconInstYellow.png" alt="" />
@@ -38,7 +38,7 @@ const Footer = () => {
                <a href="">
                   <img loading="lazy" src="images/icons/iconTelegramYellow.png" alt="" />
                </a>
-            </div>
+            </div> */}
          </div>
       </div>
    )
