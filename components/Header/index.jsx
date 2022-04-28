@@ -14,7 +14,7 @@ export default function Header() {
     <div id={styles["header"]}>
       <div className={styles["header_container"]}>
         <div className={styles["logo"]}>
-          <img src="images/allLogo.png" alt="" />
+          <img src="images/logo/allLogo.png" alt="" loading="lazy" />
         </div>
         <div className={styles["header_links"]}>
           <Link
@@ -97,10 +97,10 @@ export default function Header() {
         </div>
         <div className={styles["lang"]}>
           <a href="https://www.instagram.com/mercy_chain">
-            <img loading="lazy" src="images/iconInstYellow.png" alt="" className={styles["lang_desc_img"]} />
+            <img loading="lazy" src="images/icons/iconInstYellow.png" alt="" className={styles["lang_desc_img"]} />
           </a>
           <a href="https://www.facebook.com/Mercy-Chain-108789655101913/">
-            <img loading="lazy" src="images/iconFacebookYellow.png" alt="" className={styles["lang_desc_img"]} />
+            <img loading="lazy" src="images/icons/iconFacebookYellow.png" alt="" className={styles["lang_desc_img"]} />
           </a>
           <span></span>
           <Language />

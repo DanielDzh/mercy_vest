@@ -4,7 +4,6 @@ import AboutUs from "../components/AboutUs";
 import ClassVest from "../components/ClassVest";
 import OurTeam from "../components/OurTeam";
 import CostVest from "../components/CostVest";
-import OurPartners from "../components/OurPartners";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import { Helmet } from "../components/Helmet";
@@ -25,7 +24,7 @@ export default function Home() {
       <Helmet
         customTitle="Mercy Vest"
         description="share_text"
-        image="images/Logo.png"
+        image="images/logo/Logo.png"
       />
       <HeroSlider />
       <VideoBlock />
@@ -36,7 +35,6 @@ export default function Home() {
       <Reviews />
       <Details />
       {/* <OurTeam /> */}
-      {/* <OurPartners /> */}
       <ContactUs />
       <Footer />
     </div>

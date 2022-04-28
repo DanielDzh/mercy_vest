@@ -16,7 +16,7 @@ const Telegram = ({ url }) => (
 );
 
 const Facebook = ({ url }) => (
-  <SocialMedia url={url} icon="images/iconFacebook.png" />
+  <SocialMedia url={url} icon="images/icon/iconFacebook.png" />
 );
 
 const Instagram = ({ url }) => <SocialMedia url={url} icon="images/iconInst.png" />;

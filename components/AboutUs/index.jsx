@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-import CustomList from "../CustomList";
 import styles from "./AboutUs.module.scss";
-import ButtonBlue from "../ButtonBlue";
 import { useTrans } from "../../hooks/useTrans";
-import { useOpenHandlers } from "../../hooks/useOpenHandlers";
-import PaymentForm from "../PaymentForm";
 import Slider from "react-slick";
 
 
@@ -109,7 +105,7 @@ export default function AboutUs() {
         <div className={styles["aboutUs_blocks"]}>
           <div className={styles["aboutUs_block"]}>
             <div className={styles["aboutUs_block_img"]}>
-              <img src="images/vestInWork/img_1.png" alt="" />
+              <img src="images/vestInWork/img_1.png" alt="" loading="lazy" />
             </div>
             <h2 className={styles["aboutUs_block_h2"]}>
               {trans('armored_plate')}
@@ -120,7 +116,7 @@ export default function AboutUs() {
           </div>
           <div className={styles["aboutUs_block"]}>
             <div className={styles["aboutUs_block_img"]}>
-              <img src="images/vestInWork/img_2.png" alt="" />
+              <img src="images/vestInWork/img_2.png" alt="" loading="lazy" />
             </div>
             <h2 className={styles["aboutUs_block_h2"]}>
               {trans('splinter_proof')}
@@ -131,7 +127,7 @@ export default function AboutUs() {
           </div>
           <div className={styles["aboutUs_block"]}>
             <div className={styles["aboutUs_block_img"]}>
-              <img src="images/vestInWork/img_3.png" alt="" />
+              <img src="images/vestInWork/img_3.png" alt="" loading="lazy" />
             </div>
             <h2 className={styles["aboutUs_block_h2"]}>
               {trans('internal_coating')}
@@ -142,7 +138,7 @@ export default function AboutUs() {
           </div>
           <div className={styles["aboutUs_block"]}>
             <div className={styles["aboutUs_block_img"]}>
-              <img src="images/vestInWork/img_4.png" alt="" />
+              <img src="images/vestInWork/img_4.png" alt="" loading="lazy" />
             </div>
             <h2 className={styles["aboutUs_block_h2"]}>
               {trans('plate_carrier')}
