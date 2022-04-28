@@ -27,12 +27,12 @@ export default function OurTeam() {
 
   const people = [
     {
-      photo: "images/team/Shkurko.png",
-      name: useTrans().trans("Shkurko"),
-      profession: useTrans().trans("Shkurko_spec"),
-      // telegram: "https://t-do.ru/@daniilbogatiuk",
-      // instagram: "https://www.instagram.com/daniil.bogatiuk/",
-      // facebook: "https://www.facebook.com/daniil.bogatiuk",
+      photo: "images/team/derkach.png",
+      name: trans("Derkach"),
+      profession: trans("Derkach_spec"),
+      // telegram: "",
+      // instagram: "https://www.instagram.com/vo.taniusha/",
+      // facebook: "",
     },
     {
       photo: "images/team/Jaik.png",
@@ -43,12 +43,12 @@ export default function OurTeam() {
       // facebook: "https://www.facebook.com/cherniakvasyl",
     },
     {
-      photo: "images/team/derkach.png",
-      name: trans("Derkach"),
-      profession: trans("Derkach_spec"),
-      // telegram: "",
-      // instagram: "https://www.instagram.com/vo.taniusha/",
-      // facebook: "",
+      photo: "images/team/Shkurko.png",
+      name: useTrans().trans("Shkurko"),
+      profession: useTrans().trans("Shkurko_spec"),
+      // telegram: "https://t-do.ru/@daniilbogatiuk",
+      // instagram: "https://www.instagram.com/daniil.bogatiuk/",
+      // facebook: "https://www.facebook.com/daniil.bogatiuk",
     },
     {
       photo: "images/team/Ruvim.png",
