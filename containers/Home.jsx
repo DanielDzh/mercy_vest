@@ -34,7 +34,7 @@ export default function Home() {
       <Everyday />
       <Reviews />
       <Details />
-      {/* <OurTeam /> */}
+      <OurTeam />
       <ContactUs />
       <Footer />
     </div>
