@@ -21,7 +21,7 @@ export default function CostVest() {
             <p className={styles["cost_desc_p"]}>{trans("cost_desc_p")}</p>
             <div className={styles["cost_desc_span"]}>
               <p>{trans("cost_desc_span_1")}</p>
-              <p>{trans("cost_desc_span_2")}</p>
+              {/* <p>{trans("cost_desc_span_2")}</p> */}
               <p>{trans("cost_desc_span_3")}</p>
               <p>{trans("cost_desc_span_4")}</p>
 

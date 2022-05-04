@@ -164,10 +164,11 @@ export default function Reviews() {
                   {trans("reviews_title_2")}
                </p>
                <div className={styles["reviews_title_block"]}>
-                  <span className={styles["reviews_title_block_span_yellow"]}>85 </span>
-                  <span>комплексів на суму </span>
-                  <span className={styles["reviews_title_block_span_yellow"]}>18700 </span>
-                  <span>USD</span>
+                  <span>{trans("reviews_desc_1")}</span>
+                  <span className={styles["reviews_title_block_span_yellow"]}>{trans("reviews_desc_2")}</span>
+                  <span>{trans("reviews_desc_3")} </span>
+                  <span className={styles["reviews_title_block_span_yellow"]}>{trans("reviews_desc_4")} </span>
+                  <span>{trans("reviews_desc_5")}</span>
                </div>
             </div>
             <div className={styles["reviews_slider"]}>
