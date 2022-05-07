@@ -56,7 +56,7 @@ const ContactUs = () => {
             <img src="images/icons/iconPhone.png" alt="" />
 
           </div>
-          <h3 className={styles["ourContacts_numb"]}>+421948143899</h3>
+          <h3 className={styles["ourContacts_numb"]}>+380989400009</h3>
 
           {contacts.map((item) => (
             <div key={item.name} className={styles["contacts_wrapper"]}>
@@ -98,7 +98,7 @@ const ContactUs = () => {
                 <img src="images/icons/iconPhone.png" alt="" />
 
               </div>
-              <h3 className={styles["ourContacts_numb"]}>+421948143899</h3>
+              <h3 className={styles["ourContacts_numb"]}>+380989400009</h3>
               {contacts.map((item) => (
                 <div key={item.name} className={styles["contacts_wrapper"]}>
                   <a href={item.url && item.url}>
