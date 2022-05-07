@@ -7,18 +7,12 @@ import styles from "./ContactUs.module.scss";
 import ContactForm from "./Form";
 
 const contacts = [
-  {
-    icon: "images/icons/iconLocation.png",
-    name: "location",
-    url: "",
-    desc: "Kresánkova 3581/7B, 84105 Bratislava Slovakia",
-  },
-  {
-    icon: "images/icons/iconPhone.png",
-    name: "phone",
-    url: "",
-    desc: "+421948143899",
-  },
+  // {
+  //   // icon: "images/icons/iconPhone.png",
+  //   name: "phone",
+  //   url: "",
+  //   desc: "+421948143899",
+  // },
   {
     icon: "images/icons/iconMail.png",
     name: "mail",
@@ -55,6 +49,15 @@ const ContactUs = () => {
           <h1 className={styles["ourContacts_h1"]}>
             Контакти
           </h1>
+          <div className={styles["ourContacts_icons"]}>
+            <img src="images/icons/whatsapp.png" alt="" />
+            <img src="images/icons/iconTelegramYellow.png" alt="" />
+            <img src="images/icons/viber.png" alt="" />
+            <img src="images/icons/iconPhone.png" alt="" />
+
+          </div>
+          <h3 className={styles["ourContacts_numb"]}>+421948143899</h3>
+
           {contacts.map((item) => (
             <div key={item.name} className={styles["contacts_wrapper"]}>
               <a href={item.url && item.url}>
@@ -88,6 +91,14 @@ const ContactUs = () => {
               <h1 className={styles["ourContacts_h1"]}>
                 Контакти
               </h1>
+              <div className={styles["ourContacts_icons"]}>
+                <img src="images/icons/whatsapp.png" alt="" />
+                <img src="images/icons/iconTelegramYellow.png" alt="" />
+                <img src="images/icons/viber.png" alt="" />
+                <img src="images/icons/iconPhone.png" alt="" />
+
+              </div>
+              <h3 className={styles["ourContacts_numb"]}>+421948143899</h3>
               {contacts.map((item) => (
                 <div key={item.name} className={styles["contacts_wrapper"]}>
                   <a href={item.url && item.url}>
