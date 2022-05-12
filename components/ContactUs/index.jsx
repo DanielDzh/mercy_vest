@@ -16,8 +16,8 @@ const contacts = [
   {
     icon: "images/icons/iconMail.png",
     name: "mail",
-    url: "mailto:support@mercychain.org",
-    desc: "support@mercychain.org",
+    url: "mailto:Alexey.zigmar@gmail.com",
+    desc: "Alexey.zigmar@gmail.com",
   },
   // {
   //    icon: "images/iconInstYellow.png",
