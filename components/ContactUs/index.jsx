@@ -37,7 +37,7 @@ const ContactUs = () => {
   const { trans } = useTrans();
   const [success, setSucess] = useState(false);
   const onSubmit = (form) => {
-    Api.post("/support", form).then(() => setSucess(true));
+    Api.post("/support", {...form, vest: true }).then(() => setSucess(true));
     console.log(form);
 
   }
