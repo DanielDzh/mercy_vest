@@ -182,7 +182,7 @@ export default function Reviews() {
                               alt=""
                            />
                         </div>
-                        <div className={styles["slide_desc"]}>
+                        {/* <div className={styles["slide_desc"]}>
                            <div className={styles["slide_desc_cont"]}>
                               <img src="images/icons/date.png" alt="" loading="lazy" />
                               <p>{item.date}</p>
@@ -195,7 +195,7 @@ export default function Reviews() {
                               <img src="images/icons/city.png" alt="" loading="lazy" />
                               <p>{item.city}</p>
                            </div>
-                        </div>
+                        </div> */}
                      </div>
                   ))}
                </Slider>
