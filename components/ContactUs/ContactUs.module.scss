@@ -125,6 +125,24 @@
       @media screen and (max-width: 375px) {
         font-size: 4vw;
       }
+
+
+      div {
+        font-size: 1.2vw;
+        line-height: 120%;
+
+        @media screen and(max-width: 600px) {
+          font-size: 2.4vw;
+        }
+
+        @media screen and(max-width: 475px) {
+          font-size: 2.6vw;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 3.6vw;
+        }
+      }
     }
 
     .ourContacts_span {
@@ -269,6 +287,7 @@
           @media screen and(max-width: 600px) {
             line-height: 140%;
             font-size: 2.8vw;
+            margin-top: 3px;
           }
 
           @media screen and(max-width: 475px) {
@@ -408,6 +427,25 @@
 
           @media screen and (max-width: 375px) {
             font-size: 4vw;
+          }
+
+          div {
+            font-size: 1.2vw;
+            line-height: 120%;
+
+            @media screen and(max-width: 600px) {
+              line-height: 120%;
+              font-size: 2.4vw;
+            }
+
+            @media screen and(max-width: 475px) {
+              line-height: 120%;
+              font-size: 2.6vw;
+            }
+
+            @media screen and (max-width: 375px) {
+              font-size: 3.6vw;
+            }
           }
         }
 

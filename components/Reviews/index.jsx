@@ -7,52 +7,73 @@ import { Link } from "react-scroll";
 
 const sliderPaths = [
    {
-      date: '14 квітня',
-      amount: '60 бронежелетів',
-      city: 'м.Харків',
-      img: "images/reviews/reviews.png",
+      img: "images/reviews/1.jpg",
    },
    {
-      date: '14 квітня',
-      amount: '60 бронежелетів',
-      city: 'м.Харків',
-      img: "images/reviews/reviews.png",
+      img: "images/reviews/2.jpg",
    },
    {
-      date: '14 квітня',
-      amount: '60 бронежелетів',
-      city: 'м.Харків',
-      img: "images/reviews/reviews.png",
+      img: "images/reviews/3.jpg",
    },
    {
-      date: '14 квітня',
-      amount: '60 бронежелетів',
-      city: 'м.Харків',
-      img: "images/reviews/reviews.png",
+      img: "images/reviews/4.jpg",
    },
    {
-      date: '14 квітня',
-      amount: '60 бронежелетів',
-      city: 'м.Харків',
-      img: "images/reviews/reviews.png",
+      img: "images/reviews/5.jpg",
    },
    {
-      date: '14 квітня',
-      amount: '60 бронежелетів',
-      city: 'м.Харків',
-      img: "images/reviews/reviews.png",
+      img: "images/reviews/6.jpg",
    },
    {
-      date: '14 квітня',
-      amount: '60 бронежелетів',
-      city: 'м.Харків',
-      img: "images/reviews/reviews.png",
+      img: "images/reviews/7.jpg",
    },
    {
-      date: '14 квітня',
-      amount: '60 бронежелетів',
-      city: 'м.Харків',
-      img: "images/reviews/reviews.png",
+      img: "images/reviews/8.jpg",
+   },
+   {
+      img: "images/reviews/9.jpg",
+   },
+   {
+      img: "images/reviews/10.jpg",
+   },
+   {
+      img: "images/reviews/11.jpg",
+   },
+   {
+      img: "images/reviews/12.jpg",
+   },
+   {
+      img: "images/reviews/13.jpg",
+   },
+   {
+      img: "images/reviews/14.jpg",
+   },
+   {
+      img: "images/reviews/15.jpg",
+   },
+   {
+      img: "images/reviews/16.jpg",
+   },
+   {
+      img: "images/reviews/17.jpg",
+   },
+   {
+      img: "images/reviews/18.jpg",
+   },
+   {
+      img: "images/reviews/19.jpg",
+   },
+   {
+      img: "images/reviews/20.jpg",
+   },
+   {
+      img: "images/reviews/21.jpg",
+   },
+   {
+      img: "images/reviews/22.jpg",
+   },
+   {
+      img: "images/reviews/23.jpg",
    }
 ];
 const count = sliderPaths.lenght;
@@ -65,7 +86,7 @@ export default function Reviews() {
       return (
          <div
             className={className}
-            style={{ ...style, cursor: 'pointer', display: "flex", justifyContent: 'center', alignItems: 'center', position: 'absolute', left: '37%', bottom: '0%', height: '3vw', padding: '.8vw', borderRadius: '50px', backgroundColor: 'unset', zIndex: 2 }}
+            style={{ ...style, cursor: 'pointer', display: "flex", justifyContent: 'center', alignItems: 'center', position: 'absolute', left: '43%', bottom: '-27%', height: '3vw', padding: '.8vw', borderRadius: '50px', backgroundColor: 'unset', zIndex: 2 }}
             onClick={onClick}
          >
             <img loading="lazy" style={{ height: '100%' }} src="images/icons/back.png" alt="" />
@@ -77,7 +98,7 @@ export default function Reviews() {
       return (
          <div
             className={className}
-            style={{ ...style, cursor: 'pointer', display: "flex", justifyContent: 'center', alignItems: 'center', position: 'absolute', right: '37%', bottom: '0%', height: '3vw', padding: '.8vw', borderRadius: '50px', backgroundColor: 'unset' }}
+            style={{ ...style, cursor: 'pointer', display: "flex", justifyContent: 'center', alignItems: 'center', position: 'absolute', right: '43%', bottom: '-27%', height: '3vw', padding: '.8vw', borderRadius: '50px', backgroundColor: 'unset' }}
             onClick={onClick}
          >
             <img loading="lazy" style={{ height: '100%' }} src="images/icons/next.png" alt="" />
@@ -92,7 +113,7 @@ export default function Reviews() {
       slidesToShow: 5,
       speed: 300,
       arrows: true,
-      dots: true,
+      dots: false,
       responsive: [
          {
             breakpoint: 650,

@@ -37,7 +37,7 @@ const ContactUs = () => {
   const { trans } = useTrans();
   const [success, setSucess] = useState(false);
   const onSubmit = (form) => {
-    Api.post("/support", {...form, vest: true }).then(() => setSucess(true));
+    Api.post("/support", { ...form, vest: true }).then(() => setSucess(true));
     console.log(form);
 
   }
@@ -56,8 +56,14 @@ const ContactUs = () => {
             <img src="images/icons/iconPhone.png" alt="" />
 
           </div>
-          <h3 className={styles["ourContacts_numb"]}>+1 (805) 931-4534</h3>
-
+          <h3 className={styles["ourContacts_numb"]}>
+            <div>UA Derkach Oleksii</div>
+            +380 (98) 940 00 09
+          </h3>
+          <h3 className={styles["ourContacts_numb"]}>
+            <div>USA Jake Knotts</div>
+            +1 (805) 931-4534
+          </h3>
           {contacts.map((item) => (
             <div key={item.name} className={styles["contacts_wrapper"]}>
               <a href={item.url && item.url}>
@@ -98,7 +104,14 @@ const ContactUs = () => {
                 <img src="images/icons/iconPhone.png" alt="" />
 
               </div>
-              <h3 className={styles["ourContacts_numb"]}>+380989400009</h3>
+              <h3 className={styles["ourContacts_numb"]}>
+                <div>UA Derkach Oleksii</div>
+                +380 (98) 940 00 09
+              </h3>
+              <h3 className={styles["ourContacts_numb"]}>
+                <div>USA Jake Knotts</div>
+                +1 (805) 931-4534
+              </h3>
               {contacts.map((item) => (
                 <div key={item.name} className={styles["contacts_wrapper"]}>
                   <a href={item.url && item.url}>

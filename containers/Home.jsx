@@ -29,7 +29,7 @@ export default function Home() {
       <HeroSlider />
       <VideoBlock />
       <AboutUs />
-      {/* <ClassVest /> */}
+      <ClassVest />
       <CostVest />
       <Everyday />
       <Reviews />

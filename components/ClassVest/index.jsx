@@ -5,7 +5,7 @@ import { useTrans } from "../../hooks/useTrans";
 
 
 
-const rating = [4, 5];
+const rating = [4];
 
 
 export default function ClassVest() {
@@ -21,12 +21,12 @@ export default function ClassVest() {
       vets_img: '/images/vestsClass/class_5.png',
       desc: trans("levels_of_dody_desc_1")
     },
-    {
-      rating: 5,
-      vets_img: '/images/vestsClass/class_5.png',
-      desc: trans("levels_of_dody_desc_1")
+    // {
+    //   rating: 5,
+    //   vets_img: '/images/vestsClass/class_5.png',
+    //   desc: trans("levels_of_dody_desc_1")
 
-    }
+    // }
   ]
 
   return (
@@ -69,7 +69,7 @@ export default function ClassVest() {
                 rating.map((item, index) => (
                   <div className={styles["vest_choice"]} onClick={() => setActive(item)} key={index} style={{ borderColor: item === active && '#FFBC15' }}>
                     <p style={{ color: item === active && '#fff' }}>
-                      {trans("levels_of_dody_class")} {item}:
+                      {item} {trans("levels_of_dody_class")}:
                     </p>
                   </div>
                 ))
