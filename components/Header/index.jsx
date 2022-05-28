@@ -41,18 +41,7 @@ export default function Header() {
           </Link>
           <Link
             className={styles["header_link"]}
-            to="levels"
-            smooth={true}
-            duration={2000}
-            activeClass="active"
-            spy={false}
-            offset={5}
-          >
-            {trans('header_join')}
-          </Link>
-          <Link
-            className={styles["header_link"]}
-            to="cost"
+            to="reviews"
             smooth={true}
             duration={2000}
             activeClass="active"
@@ -63,7 +52,7 @@ export default function Header() {
           </Link>
           <Link
             className={styles["header_link"]}
-            to="reviews"
+            to="ourTeam"
             smooth={true}
             duration={2000}
             activeClass="active"
