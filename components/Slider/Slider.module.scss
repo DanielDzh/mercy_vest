@@ -379,27 +379,27 @@
             background: #152E47;
             border-radius: 11px;
             padding: .5vw .7vw;
-            width: 120px;
+            width: fit-content;
             right: -50px;
             position: relative;
 
             @media screen and (max-width: 1200px) {
-              width: 100px;
+              // width: 100px;
             }
 
             @media screen and (max-width: 768px) {
               padding: 5px 10px;
-              width: 90px;
+              // width: 90px;
             }
 
             @media screen and (max-width: 650px) {
               padding: 4px 8px;
-              width: 80px;
+              // width: 80px;
             }
 
             @media screen and (max-width: 550px) {
               padding: 8px 15px;
-              width: 110px;
+              // width: 110px;
               right: 0;
             }
 
