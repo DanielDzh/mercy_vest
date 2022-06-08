@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import { useTrans } from "../../hooks/useTrans";
 import ButtonBlue from "../ButtonBlue";
@@ -7,6 +7,12 @@ import styles from "./Slider.module.scss";
 
 export default function HeroSlider() {
   const { trans } = useTrans();
+
+  let now_price = '128 700';
+  let end_count_vest = 1500;
+  let now_count_vest = 585;
+
+  let interest = now_count_vest * 100 / end_count_vest;
 
 
   return (
@@ -39,8 +45,42 @@ export default function HeroSlider() {
               </div>
 
               <p>{trans("slider_desc")}</p>
+
+
+
+              <div className={styles["hero_target"]}>
+                <div className={styles["hero_target_over"]}>
+                  <span>0</span>
+                  <div className={styles["hero_target_over_end"]}>
+                    <img src="images/icons/dollar-circle.png" alt="" className={styles["hero_target_over_img_dollar"]} />
+                    <span>330 000</span>
+                  </div>
+                </div>
+                <div className={styles["hero_target_line"]}>
+                  <div className={styles["hero_target_line_active"]} style={{ width: `${interest}%` }}>
+                    <div className={`${styles.hero_target_process} ${styles.hero_target_process_first}`}>
+                      <img src="images/icons/dollar-circle_active.png" alt="" className={styles["hero_target_over_img_dollar"]} />
+                      <span>{now_price}</span>
+                    </div>
+                    <div className={`${styles.hero_target_process} ${styles.hero_target_process_second}`}>
+                      <img src="images/icons/vest_target_active.png" alt="" className={styles["hero_target_over_img_vest"]} />
+                      <span>{now_count_vest}</span>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles["hero_target_over"]}>
+                  <span>0</span>
+                  <div className={styles["hero_target_over_end"]}>
+                    <img src="images/icons/vest_target.png" alt="" className={styles["hero_target_over_img_vest"]} />
+                    <span>1500</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+
               <Link
-                // className={styles["header_link"]}
                 to="details"
                 smooth={true}
                 duration={2000}
