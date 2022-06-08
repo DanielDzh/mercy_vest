@@ -7,7 +7,7 @@ export default function CostVest() {
   const { trans } = useTrans();
 
   return (
-    <div id={styles.cost}>
+    <div id="cost">
       <div className={styles["cost"]}>
         <div className={styles["cost_container"]}>
           <div className={styles["cost_text"]}>

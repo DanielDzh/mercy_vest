@@ -26,18 +26,18 @@ export default function Header() {
             spy={false}
             offset={5}
           >
-            {trans("header_aboutUs")}
+            {trans("header_production")}
           </Link>
           <Link
             className={styles["header_link"]}
-            to="minutiae"
+            to="cost"
             smooth={true}
             duration={2000}
             activeClass="active"
             spy={false}
             offset={5}
           >
-            {trans`header_project`}
+            {trans`header_cost`}
           </Link>
           <Link
             className={styles["header_link"]}
@@ -48,7 +48,7 @@ export default function Header() {
             spy={false}
             offset={5}
           >
-            {trans('header_reviews')}
+            {trans('header_report')}
           </Link>
           <Link
             className={styles["header_link"]}
@@ -70,7 +70,7 @@ export default function Header() {
             spy={false}
             offset={5}
           >
-            {trans('header_partners')}
+            {trans('header_join')}
           </Link>
           <Link
             className={styles["header_link"]}
