@@ -567,29 +567,22 @@
             background: #152E47;
             border-radius: 11px;
             padding: .5vw .7vw;
-            width: 120px;
-            right: -50px;
+            width: auto;
             position: absolute;
             color: #fff;
 
-            @media screen and (max-width: 1200px) {
-              width: 100px;
-            }
+            @media screen and (max-width: 1200px) {}
 
             @media screen and (max-width: 768px) {
               padding: 5px 10px;
-              width: 90px;
-              right: -40px;
             }
 
             @media screen and (max-width: 650px) {
               padding: 4px 8px;
-              width: 80px;
             }
 
             @media screen and (max-width: 550px) {
               padding: 8px 15px;
-              width: 110px;
             }
 
             @media screen and (max-width: 475px) {
@@ -632,6 +625,7 @@
 
             &.hero_target_process_first {
               top: -4vw;
+              right: -3vw;
 
               @media screen and (max-width: 900px) {
                 top: -4.7vw;
@@ -639,10 +633,12 @@
 
               @media screen and (max-width: 768px) {
                 top: -40px;
+                right: -4.5vw;
               }
 
               @media screen and (max-width: 550px) {
                 top: -50px;
+                right: -7vw;
               }
 
               @media screen and (max-width: 475px) {
@@ -656,6 +652,8 @@
 
             &.hero_target_process_second {
               top: 1.5vw;
+              right: -2vw;
+
 
               @media screen and (max-width: 900px) {
                 top: 1.8vw;
@@ -663,10 +661,12 @@
 
               @media screen and (max-width: 768px) {
                 top: 15px;
+                right: -3.5vw;
               }
 
               @media screen and (max-width: 550px) {
                 top: 20px;
+                right: -5.5vw;
               }
 
               @media screen and (max-width: 475px) {
