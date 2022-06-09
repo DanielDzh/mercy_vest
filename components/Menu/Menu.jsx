@@ -65,6 +65,7 @@ const Menu = ({ active, setActive }) => {
       <div className={active ? `${styles.menu} ${styles.active}` : styles["menu"]}>
          <div className={styles["blur"]} onClick={() => setActive(false)}></div>
          <div className={styles["menu_content"]}>
+
             <Link
                className={styles["header_link"]}
                to="aboutUs"
@@ -75,32 +76,7 @@ const Menu = ({ active, setActive }) => {
                offset={5}
                onClick={() => setActive(false)}
             >
-               {trans("header_aboutUs")}
-            </Link>
-            <Link
-               className={styles["header_link"]}
-               to="minutiae"
-               smooth={true}
-               duration={2000}
-               activeClass="active"
-               spy={false}
-               offset={5}
-               onClick={() => setActive(false)}
-            >
-               {trans`header_project`}
-            </Link>
-
-            <Link
-               className={styles["header_link"]}
-               to="levels"
-               smooth={true}
-               duration={2000}
-               activeClass="active"
-               spy={false}
-               offset={5}
-               onClick={() => setActive(false)}
-            >
-               {trans('header_join')}
+               {trans("header_production")}
             </Link>
             <Link
                className={styles["header_link"]}
@@ -112,11 +88,24 @@ const Menu = ({ active, setActive }) => {
                offset={5}
                onClick={() => setActive(false)}
             >
-               {trans('header_reviews')}
+               {trans`header_cost`}
             </Link>
+
             <Link
                className={styles["header_link"]}
                to="reviews"
+               smooth={true}
+               duration={2000}
+               activeClass="active"
+               spy={false}
+               offset={5}
+               onClick={() => setActive(false)}
+            >
+               {trans('header_report')}
+            </Link>
+            <Link
+               className={styles["header_link"]}
+               to="ourTeam"
                smooth={true}
                duration={2000}
                activeClass="active"
@@ -136,7 +125,7 @@ const Menu = ({ active, setActive }) => {
                offset={5}
                onClick={() => setActive(false)}
             >
-               {trans('header_partners')}
+               {trans('header_join')}
             </Link>
             <Link
                className={styles["header_link"]}
